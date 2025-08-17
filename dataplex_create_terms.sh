@@ -54,7 +54,7 @@ add_owner() {
 }
 
 # --- GŁÓWNA PĘTLA ---
-tail -n +2 "$INPUT_CSV_FILE" | while IFS=';' read -r CATEGORY_ID TERM_ID TERM_DISPLAY_NAME TERM_DESCRIPTION CONTACT_NAME CONTACT_EMAIL OVERVIEW_CONTENT
+tail -n +2 "$INPUT_CSV_FILE" | while IFS=',' read -r CATEGORY_ID TERM_ID TERM_DISPLAY_NAME TERM_DESCRIPTION CONTACT_NAME CONTACT_EMAIL OVERVIEW_CONTENT
 do
     if [ -z "$TERM_ID" ]; then continue; fi
     echo "--------------------------------------------------------"
