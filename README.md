@@ -1,4 +1,5 @@
 **Dataplex Bulk Glossary Management**
+
 This repository provides a bash script to automate the bulk addition and updating of glossary terms and categories within the Google Cloud Dataplex Unified Catalog. It allows you to manage thousands of entries efficiently by reading from a structured CSV file and executing API calls from the Google Cloud Console.
 
 The script supports two primary operations:
