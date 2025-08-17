@@ -1,4 +1,4 @@
-Dataplex Bulk Glossary Management
+**Dataplex Bulk Glossary Management**
 This repository provides a bash script to automate the bulk addition and updating of glossary terms and categories within the Google Cloud Dataplex Unified Catalog. It allows you to manage thousands of entries efficiently by reading from a structured CSV file and executing API calls from the Google Cloud Console.
 
 The script supports two primary operations:
@@ -10,7 +10,7 @@ Updating existing entries: Modifies existing entries using the PATCH method.
 This tool is designed to be executed directly from the Google Cloud Shell, streamlining glossary management without complex application setups.
 
 CSV File Schema
-To use the script, you must provide a CSV file with the following columns. The header row is mandatory.
+To use the script, you must provide a CSV file with the following columns. The header row is mandatory. CSV is comma separated.
 
 | CATEGORY_ID | TERM_ID | TERM_DISPLAY_NAME | TERM_DESCRIPTION | CONTACT_NAME | CONTACT_EMAIL | OVERVIEW_CONTENT |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -23,7 +23,7 @@ Example CSV:
 
 
 
-1. Prerequisites
+**1. Prerequisites**
 Before you begin, ensure you have the following:
 
 A Google Cloud Project with the Dataplex Universal Catalog API enabled.
@@ -36,13 +36,13 @@ Google Cloud SDK installed and authenticated, or access to the Google Cloud Shel
 
 
 
-2. Prepare Your Input CSV File
+**2. Prepare Your Input CSV File**
 Create a CSV file named glossary_entries.csv (or any other name) and populate it according to the schema described above.
 
 Upload this CSV file to your Cloud Shell instance or make sure it's accessible from where you'll run the script.
 
 
-3. Run the Script
+**3. Run the Script**
 Execute the script from your Cloud Shell (just simply ctr+c and ctrl+v into the shell)
 The script will iterate through each row of the CSV file and make the corresponding API calls to Dataplex. It will output progress and any errors to the console.
 
