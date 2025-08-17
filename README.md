@@ -46,5 +46,5 @@ Upload this CSV file to your Cloud Shell instance or make sure it's accessible f
 Execute the script from your Cloud Shell (just simply ctr+c and ctrl+v into the shell)
 The script will iterate through each row of the CSV file and make the corresponding API calls to Dataplex. It will output progress and any errors to the console.
 
-4. Verify the Results
+**4. Verify the Results**
 Once the script finishes, navigate to the Dataplex section in the Google Cloud Console. Open your glossary and verify that the new terms and categories have been created or that existing ones have been updated as expected. Check the script's console output for any failed API calls to troubleshoot specific entries.
